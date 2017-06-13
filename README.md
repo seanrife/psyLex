@@ -13,10 +13,10 @@ These functions can be implemented in any existing Python program. Additionally,
 
 ## Notes
 
-For those familiar with the LIWC program, there are a number of notable differences. As such, results obtained from psyLex may differ from thos obtained with LIWC. However, such differences should be quite small, and of little statistical/practical significance (particularly when used with extremely large datasets).
+For those familiar with the LIWC program, there are a number of notable differences. As such, results obtained from psyLex may differ from those obtained with LIWC. However, such differences should be quite small, and of little statistical/practical significance (particularly when used with extremely large datasets).
 - The original LIWC program used a wildcard-style method ("*") of specifying word stems in the dictionary. In order to enhance forward-compatibility and flexibility, psyLex identifies dictionary words with wildcards and uses a stemmer (the Porter Stemming Algorithm by default) to match dictionary stems with words in the analyzed text.
 - At present, only English is supported (non-utf8 characters are filtered out). This is mostly because I'm an arrogant American and haven't bothered to learn any other languages. If anyone wants to help with this, let me know...
 
 ## Dependencies
 
-Basic linguistic functions (tokenization, stemming, etc.) are done via. the Python Natural Language Toolkit - available from nltk.org.
+Basic linguistic functions (tokenization, stemming, etc.) are performed via. the Python Natural Language Toolkit - available from nltk.org.
